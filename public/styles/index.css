@@ -1,13 +1,31 @@
-*, *::after, *::before {
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .root-hero .logo-container {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 75rem) {
+  .root-hero .logo-container {
+    margin-top: 3rem;
+  }
 }
 
 .root-hero .hero-container {
@@ -18,6 +36,20 @@
   justify-content: center;
   gap: 5.5rem;
   overflow: hidden;
+}
+@media screen and (max-width: 75rem) {
+  .root-hero .hero-container {
+    margin-top: 4rem;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .root-hero .hero-container {
+    margin-top: 3.375rem;
+  }
 }
 .root-hero .hero-container::before, .root-hero .hero-container::after {
   content: "";
@@ -31,12 +63,124 @@
   background-image: url(/assets/desktop/image-hero-left.png);
   background-position: right center;
 }
+@media screen and (max-width: 75rem) {
+  .root-hero .hero-container::before {
+    background-image: url(/assets/tablet/image-hero.png);
+    width: 100%;
+    max-width: unset;
+    background-position: center center;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .root-hero .hero-container::before {
+    height: 9.5625rem;
+  }
+}
 .root-hero .hero-container::after {
   background-image: url(/assets/desktop/image-hero-right.png);
   background-position: left center;
 }
+@media screen and (max-width: 75rem) {
+  .root-hero .hero-container::after {
+    display: none;
+  }
+}
 .root-hero .hero-container .content {
   width: 33.75rem;
+  margin-top: 2.9375rem;
+}
+@media screen and (max-width: 75rem) {
+  .root-hero .hero-container .content {
+    margin-top: 4.5rem;
+    width: 28.5625rem;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .root-hero .hero-container .content {
+    margin-top: 3rem;
+    width: 87.2%;
+  }
+}
+.root-hero .hero-container .title {
+  margin: 0 auto;
+  font-size: 4rem;
+  line-height: 1;
+  color: #28283D;
+  text-align: center;
+  font-weight: 900;
+  max-width: 27.8125rem;
+}
+@media screen and (max-width: 75rem) {
+  .root-hero .hero-container .title {
+    font-size: 3rem;
+    max-width: 21.25rem;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .root-hero .hero-container .title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+}
+.root-hero .hero-container .description {
+  margin-top: 2.125rem;
+  font-size: 1.125rem;
+  line-height: 1.44;
+  color: #87879D;
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (max-width: 75rem) {
+  .root-hero .hero-container .description {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+}
+.root-hero .hero-container .cta-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 37.5rem) {
+  .root-hero .hero-container .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.root-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 900;
+  height: 3.625rem;
+  color: #FAFAFA;
+  cursor: pointer;
+  padding: 0 2.5rem;
+  border-radius: 999px;
+}
+.root-button.teal {
+  background-color: #4D96A9;
+}
+.root-button.teal:hover {
+  background-color: #71c0d4;
+}
+.root-button.teal em {
+  margin-left: 0.25rem;
+  color: #8FE3F9;
+  font-style: normal;
+}
+.root-button.purple {
+  background-color: #855FB1;
+}
+.root-button.purple:hover {
+  background-color: #b18bdd;
+}
+.root-button.small {
+  padding: 0 1.8125rem;
 }
 
 /*# sourceMappingURL=index.css.map */

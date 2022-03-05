@@ -1,0 +1,41 @@
+@use './mixins' as *;
+
+.root-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(16);
+  font-weight: 900;
+  height: rem(58);
+  color: $light;
+
+  cursor: pointer;
+  padding: 0 rem(40);
+  border-radius: 999px;
+
+  &.teal {
+    background-color: $teal;
+
+    &:hover {
+      background-color: #71c0d4;
+    }
+
+    em {
+      margin-left: rem(4);
+      color: $light-blue;
+      font-style: normal;
+    }
+  }
+
+  &.purple {
+    background-color: $purple;
+
+    &:hover {
+      background-color: #b18bdd;
+    }
+  }
+
+  &.small {
+    padding: 0 rem(29);
+  }
+}

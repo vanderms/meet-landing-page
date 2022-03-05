@@ -9,7 +9,6 @@ import {
 import type { MetaFunction } from 'remix';
 import type { LinksFunction } from 'remix';
 
-
 export const links: LinksFunction = () => {
   return [
     {
@@ -20,8 +19,8 @@ export const links: LinksFunction = () => {
     },
     {
       rel: 'stylesheet',
-      href: '/styles/index.css'
-    }
+      href: '/styles/index.css',
+    },
   ];
 };
 
@@ -34,7 +33,7 @@ export default function App() {
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />       
         <Meta />
         <Links />
       </head>
