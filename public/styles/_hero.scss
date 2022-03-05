@@ -1,0 +1,40 @@
+@use './mixins' as *;
+
+.root-hero .logo-container {
+  margin-top: rem(80);
+  display: flex;
+  justify-content: center;
+}
+
+.root-hero .hero-container {
+  margin-top: rem(61);
+  @include size(100%, rem(358));
+  display: flex;
+  justify-content: center;
+  gap: rem(88);
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    height: rem(303);
+    width: calc(50% - rem(358));
+    max-width: rem(394);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    background-image: url(/assets/desktop/image-hero-left.png);
+    background-position: right center;
+  }
+
+  &::after {
+    background-image: url(/assets/desktop/image-hero-right.png);
+    background-position: left center;
+  }
+
+  .content {
+    width: rem(540);
+  }
+}

@@ -1,7 +1,10 @@
+import Hero from "~/components/containers/section-hero";
+
+
 export default function Index() {
   return (
-   <div>
-     hello remix!
-   </div>
+   <main>
+     <Hero/>
+   </main>
   );
 }

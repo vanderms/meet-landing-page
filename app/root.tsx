@@ -8,8 +8,6 @@ import {
 } from 'remix';
 import type { MetaFunction } from 'remix';
 import type { LinksFunction } from 'remix';
-import Favicon from './assets/favicon-32x32.png';
-import globalStyles from './styles/index.css';
 
 
 export const links: LinksFunction = () => {
@@ -18,17 +16,17 @@ export const links: LinksFunction = () => {
       rel: 'icon',
       type: 'image/png',
       sizes: '32x32',
-      href: Favicon,
+      href: '/assets/favicon-32x32.png',
     },
     {
       rel: 'stylesheet',
-      href: globalStyles
+      href: '/styles/index.css'
     }
   ];
 };
 
 export const meta: MetaFunction = () => {
-  return { title: 'New Remix App' };
+  return { title: 'Frontend Mentor | Meet landing page' };
 };
 
 export default function App() {

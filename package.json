@@ -11,7 +11,7 @@
     "dev:wrangler": "cross-env NODE_ENV=development wrangler pages dev ./public",
     "dev": "cross-env NODE_ENV=development remix build && run-p dev:*",
     "start": "cross-env NODE_ENV=production npm run dev:wrangler",
-    "sass": "sass --watch app/:app/"
+    "sass": "sass --watch public/:public/"
   },
   "dependencies": {
     "@remix-run/cloudflare-pages": "^1.2.3",
