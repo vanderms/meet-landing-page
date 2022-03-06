@@ -217,21 +217,64 @@ ul {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 75rem) {
+  .root-section-details {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .root-section-details {
+    margin-top: 4rem;
+  }
+}
 .root-section-details .gallery {
   margin-top: 4rem;
   display: flex;
   justify-content: space-between;
   width: 77.08333%;
 }
+@media screen and (max-width: 75rem) {
+  .root-section-details .gallery {
+    width: 89.583%;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .root-section-details .gallery {
+    flex-wrap: wrap;
+    width: 87.2%;
+  }
+}
 .root-section-details .gallery img {
   width: calc(25% - 1.40625rem);
   height: auto;
   border-radius: 0.5rem;
 }
+@media screen and (max-width: 75rem) {
+  .root-section-details .gallery img {
+    width: calc(25% - 0.515625rem);
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .root-section-details .gallery img {
+    width: calc(50% - 0.78125rem);
+  }
+}
 .root-section-details .header {
   margin-top: 5rem;
   max-width: 33.75rem;
   text-align: center;
+}
+@media screen and (max-width: 75rem) {
+  .root-section-details .header {
+    margin-top: 3rem;
+    max-width: 35.8125rem;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .root-section-details .header {
+    margin-top: 4rem;
+    max-width: 87.2%;
+  }
 }
 .root-section-details .subtitle {
   font-size: 1rem;
@@ -239,6 +282,7 @@ ul {
   line-height: 1.62;
   text-transform: uppercase;
   color: #4D96A9;
+  letter-spacing: 4px;
 }
 .root-section-details .title {
   margin: 1rem auto 0 auto;
@@ -248,5 +292,27 @@ ul {
   font-weight: 900;
   max-width: 27.8125rem;
 }
+@media screen and (max-width: 37.5rem) {
+  .root-section-details .title {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    line-height: 1.12;
+  }
+}
+.root-section-details .description {
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.44;
+  color: #87879D;
+  font-weight: 500;
+  max-width: 32.8125rem;
+}
+@media screen and (max-width: 75rem) {
+  .root-section-details .description {
+    font-size: 1rem;
+    line-height: 1.62;
+    max-width: unset;
+  }
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_hero.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_button.scss%22,%22../../styles/_separator.scss%22,%22../../styles/_details.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAQ;AAER;AAAA;AAAA;EAGE;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;ACfF;EACE;EACA;EACA;EACA;EACA;;ACUA;EDfF;IAQI;;;;AAIJ;EACE;ECgBA,ODfc;ECgBd,QDhBoB;EACpB;EACA;EACA;EACA;;ACHA;EDHF;IASI;IACA;IACA;IACA;IACA;;;ACVF;EDHF;IAiBI;;;AAGF;EAEE;EACA;EACA;EACA;EACA;EACA;;AAGF;EACE;EACA;;AC7BF;ED2BA;IAKI;IACA;IACA;IACA;;;ACnCJ;ED2BA;IAYI;;;AAIJ;EACE;EACA;EACA;;AC9CF;ED2CA;IAMI;;;AAIJ;EACE;EACA;;ACvDF;EDqDA;IAKI;IACA;;;AC3DJ;EDqDA;IAUI;IACA;;;AAIJ;EACE;EACA;EACA;EACA,OCnDG;EDoDH;EACA;EACA;;AC3EF;EDoEA;IAUI;IACA;;;AC/EJ;EDoEA;IAeI;IACA;;;AAIJ;EACE;EACA;EACA;EACA,OCtEG;EDuEH;EACA;;AC9FF;EDwFA;IASI;IACA;IACA;;;AAIJ;EACE;EACA;EACA;EACA;;AC3GF;EDuGA;IAOI;IACA;;;;AE9HN;EACE;EACA;EACA;EACA;EACA;EACA;EACA,ODiCM;EC/BN;EACA;EACA;;AAEA;EACE,kBDoBG;;AClBH;EACE;;AAGF;EACE;EACA,ODiBO;EChBP;;AAIJ;EACE,kBDOK;;ACLL;EACE;;AAIJ;EACE;;;ACpCJ;EF6BE,OE5Bc;EF6Bd,QE7BuB;EACvB;EACA;EACA;;AAEA;EFuBA,OEtBgB;EFuBhB,QEvBwB;EACtB;;AAGF;EFkBA,OEjBgB;EFkBhB,QElByB;EACvB;EACA;EACA;EACA;EACA;EACA;EACA;EACA,OFiBG;;;AGrCP;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAEA;EHiBF,OGhBkB;EHiBlB,QGjByC;EACrC;;AAIJ;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA,OHKG;;AGFL;EACE;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22index.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_hero.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_button.scss%22,%22../../styles/_separator.scss%22,%22../../styles/_details.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAQ;AAER;AAAA;AAAA;EAGE;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;ACfF;EACE;EACA;EACA;EACA;EACA;;ACUA;EDfF;IAQI;;;;AAIJ;EACE;ECgBA,ODfc;ECgBd,QDhBoB;EACpB;EACA;EACA;EACA;;ACHA;EDHF;IASI;IACA;IACA;IACA;IACA;;;ACVF;EDHF;IAiBI;;;AAGF;EAEE;EACA;EACA;EACA;EACA;EACA;;AAGF;EACE;EACA;;AC7BF;ED2BA;IAKI;IACA;IACA;IACA;;;ACnCJ;ED2BA;IAYI;;;AAIJ;EACE;EACA;EACA;;AC9CF;ED2CA;IAMI;;;AAIJ;EACE;EACA;;ACvDF;EDqDA;IAKI;IACA;;;AC3DJ;EDqDA;IAUI;IACA;;;AAIJ;EACE;EACA;EACA;EACA,OCnDG;EDoDH;EACA;EACA;;AC3EF;EDoEA;IAUI;IACA;;;AC/EJ;EDoEA;IAeI;IACA;;;AAIJ;EACE;EACA;EACA;EACA,OCtEG;EDuEH;EACA;;AC9FF;EDwFA;IASI;IACA;IACA;;;AAIJ;EACE;EACA;EACA;EACA;;AC3GF;EDuGA;IAOI;IACA;;;;AE9HN;EACE;EACA;EACA;EACA;EACA;EACA;EACA,ODiCM;EC/BN;EACA;EACA;;AAEA;EACE,kBDoBG;;AClBH;EACE;;AAGF;EACE;EACA,ODiBO;EChBP;;AAIJ;EACE,kBDOK;;ACLL;EACE;;AAIJ;EACE;;;ACpCJ;EF6BE,OE5Bc;EF6Bd,QE7BuB;EACvB;EACA;EACA;;AAEA;EFuBA,OEtBgB;EFuBhB,QEvBwB;EACtB;;AAGF;EFkBA,OEjBgB;EFkBhB,QElByB;EACvB;EACA;EACA;EACA;EACA;EACA;EACA;EACA,OFiBG;;;AGrCP;EACE;EACA;EACA;EACA;;AHWA;EGfF;IAOI;;;AHQF;EGfF;IAWI;;;AAGF;EACE;EACA;EACA;EACA;;AHHF;EGDA;IAOI;;;AHNJ;EGDA;IAWI;IACA;;;AAGF;EHAF,OGCkB;EHAlB;EGCI;;AHhBJ;EGcE;IAKI;;;AHnBN;EGcE;IASI;;;AAKN;EACE;EACA;EACA;;AH/BF;EG4BA;IAMI;IACA;;;AHnCJ;EG4BA;IAWI;IACA;;;AAIJ;EACE;EACA;EACA;EACA;EACA,OH9BG;EG+BH;;AAGF;EACE;EACA;EACA;EACA,OHpCG;EGqCH;EACA;;AH3DF;EGqDA;IASI;IACA;IACA;;;AAIJ;EACE;EACA;EACA;EACA,OHlDG;EGmDH;EACA;;AH1EF;EGoEA;IASI;IACA;IACA%22,%22file%22:%22index.css%22%7D */
