@@ -8,6 +8,7 @@ import {
 } from 'remix';
 import type { MetaFunction } from 'remix';
 import type { LinksFunction } from 'remix';
+import globalStyles from '~/styles/index.css';
 
 export const links: LinksFunction = () => {
   return [
@@ -19,7 +20,8 @@ export const links: LinksFunction = () => {
     },
     {
       rel: 'stylesheet',
-      href: '/styles/index.css',
+      href: globalStyles,
+      'data-map': ''
     },
   ];
 };
