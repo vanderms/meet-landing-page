@@ -1,0 +1,107 @@
+@use './mixins' as *;
+
+.root-section-cta {
+  margin-top: rem(72);
+
+  @include media(tablet) {
+    margin-top: rem(80);
+  }
+
+  @include media(mobile) {
+    margin-top: rem(64);
+  }
+
+  .sep-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    margin-top: rem(-28);
+    position: relative;
+    z-index: -1;
+    @include size(100%, rem(308));
+    background-image: url(/assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: rem(116) 11.458% 0 11.458%;
+
+    @include media(tablet) {
+      height: auto;
+      padding-top: rem(92);
+      padding-bottom: rem(66);
+      background-image: url(/assets/tablet/image-footer.jpg);
+    }
+
+    @include media(mobile) {
+      padding-bottom: rem(72);
+      background-image: url(/assets/mobile/image-footer.jpg);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      inset: 0 0 0 0;
+      background-color: $teal;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.9;
+    }
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+
+    @include media(tablet) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .title {
+      font-size: rem(40);
+      font-weight: 900;
+      line-height: 1.1;
+      color: $light;
+      max-width: rem(350);
+
+      @include media(tablet) {
+        max-width: rem(457);
+      }
+
+      @include media(mobile) {
+        font-size: rem(32);
+        line-height: calc(36 / 32);
+      }
+    }
+
+    .description {
+      max-width: rem(350);
+      font-size: rem(18);
+      font-weight: 500;
+      line-height: calc(26 / 18);
+      color: $light;
+      margin-left: rem(16.5);
+
+      @include media(tablet) {
+        margin-left: 0;
+        margin-top: rem(32);
+        max-width: rem(573);
+      }
+
+      @include media(mobile) {
+        margin-top: rem(24);
+      }
+    }
+
+    .root-button {
+      margin-top: rem(15);
+
+      @include media(tablet) {
+        margin-top: rem(40);
+      }
+    }
+  }
+}

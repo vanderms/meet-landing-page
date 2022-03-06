@@ -13,6 +13,12 @@
   padding: 0 rem(40);
   border-radius: 999px;
 
+  em {
+    margin-left: rem(4);
+    color: $light-blue;
+    font-style: normal;
+  }
+
   &.teal {
     background-color: $teal;
 
@@ -21,14 +27,16 @@
     }
 
     em {
-      margin-left: rem(4);
       color: $light-blue;
-      font-style: normal;
     }
   }
 
   &.purple {
     background-color: $purple;
+
+    em {
+      color: #d9b8ff;
+    }
 
     &:hover {
       background-color: #b18bdd;

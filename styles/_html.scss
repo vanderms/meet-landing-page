@@ -1,3 +1,5 @@
+@use './mixins' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
 
 *,
@@ -9,11 +11,15 @@
   font-family: 'Red Hat Display', sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-ul{
+ul {
   list-style-type: none;
+}
+
+body {
+  background-color: $light;
 }
