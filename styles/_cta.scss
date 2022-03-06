@@ -25,6 +25,16 @@
     @include size(100%, rem(308));
     padding: rem(116) 11.458% 0 11.458%;
 
+    @include media(tablet) {
+      height: auto;
+      padding-top: rem(92);
+      padding-bottom: rem(66);
+    }
+
+    @include media(mobile) {
+      padding-bottom: rem(72);
+    }
+
     &::after {
       content: '';
       display: block;
@@ -34,16 +44,6 @@
       background-size: cover;
       background-position: center;
       inset: 0 0 0 0;
-
-      @include media(tablet) {
-        height: auto;
-        padding-top: rem(92);
-        padding-bottom: rem(66);
-      }
-
-      @include media(mobile) {
-        padding-bottom: rem(72);
-      }
 
       @include media(tablet) {
         background-image: url(/assets/tablet/image-footer.jpg);
