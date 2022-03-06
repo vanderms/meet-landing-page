@@ -4,6 +4,8 @@
   margin-top: rem(80);
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: rem(28);
 
   @include media(tablet) {
     margin-top: rem(48);
@@ -59,6 +61,7 @@
   &::after {
     background-image: url(/assets/desktop/image-hero-right.png);
     background-position: left center;
+    align-self: flex-end;
 
     @include media(tablet) {
       display: none;

@@ -21,6 +21,8 @@ ul {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 1.75rem;
 }
 @media screen and (max-width: 75rem) {
   .root-hero .logo-container {
@@ -79,6 +81,7 @@ ul {
 .root-hero .hero-container::after {
   background-image: url(/assets/desktop/image-hero-right.png);
   background-position: left center;
+  align-self: flex-end;
 }
 @media screen and (max-width: 75rem) {
   .root-hero .hero-container::after {
